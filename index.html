@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kael and the Whale - Official Book Site</title>
+    <meta name="description"
+        content="A children's book for ages 3–10 — Explore the magic of Kael and the Whale and buy the book on Amazon.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo-text-new.png" alt="Scott Frank Logo">
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#author">Author</a>
+                <a href="https://www.amazon.com/dp/B0CKK2L6K5" target="_blank" class="btn btn-primary">Buy Now</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('assets/images/hero-slider/slide-1.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero-slider/slide-2.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero-slider/slide-3.jpg');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero-slider/slide-4.jpg');"></div>
+        </div>
+        <div class="bubbles-container"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>An ocean-sized adventure full of wonder and imagination.</h1>
+                <div class="hero-buttons">
+                    <a href="https://www.amazon.com/dp/B0CKK2L6K5" target="_blank" class="btn btn-primary btn-lg">Buy
+                        Now</a>
+                    <a href="#gallery" class="btn btn-secondary btn-lg">See Selected Illustrations</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/book-cover-floating-transparent.png" alt="Kael and the Whale Book Cover"
+                    class="floating-book">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="waves-background">
+            <div class="about-bubbles"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Book</h2>
+                <img src="assets/images/logo-text-new.png" alt="Decoration" class="section-deco">
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/images/girl-hugging-whale.jpg" alt="Girl hugging whale">
+                </div>
+                <div class="about-text">
+                    <h3>A Heartwarming Tale of Friendship</h3>
+                    <p>A young girl, a curious heart, and the sea.
+                        In this enchanting, illustrated adventure, ordinary days tip into the astonishing with each flip
+                        of
+                        the page. A bold young explorer wanders beyond the safety of her home to find
+                        companionship in the king of the deep. Together they glide through vast waters, with skies so
+                        bright with color they almost seem alive, carried by a bond of friendship that grows beside the
+                        waves as the world widens ahead and behind.
+                        Challenges draw near from beneath the waves, inviting both children and adults to dream of a
+                        world more whimsical than they could ever have expected. Each page glimmers with
+                        imagination, inviting young readers to take Kael’s hand as she discovers friendship, wonder,
+                        and the thrill of discovery.
+                        With enchanting illustrations and a rhythm that rolls from the page like a song, this book is a
+                        tender, thrill-seeking story for children who dream boldly and love deeply.
+                    </p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-star"></i> Perfect for ages 3–10</li>
+                        <li><i class="fas fa-heart"></i> A story about empathy and nature</li>
+                        <li><i class="fas fa-paint-brush"></i> Stunning watercolor illustrations</li>
+                    </ul>
+                    <a href="https://www.amazon.com/dp/B0CKK2L6K5" target="_blank" class="btn btn-primary">Get Your
+                        Copy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="author-quote" id="author">
+        <div class="container">
+            <div class="author-content-quote">
+                <div class="author-bio quote text-center">
+                    <h2>"All the world is made of faith, and trust, and pixie dust"<br><span>- Peter Pan</span></h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>A Peek Inside the Story</h2>
+                <p>More illustrations available inside the book.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="assets/images/girl-in-boat-iceberg.jpg" alt="Girl in boat near iceberg">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="assets/images/girl-on-wave.jpg" alt="Girl surfing a wave">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="assets/images/whale-illustration.jpg" alt="Whale illustration from the book">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Author Section -->
+    <section class="author" id="author">
+        <div class="container">
+            <div class="author-content">
+                <div class="author-bio">
+                    <h2>Meet the Author <br><span>Scott J Frank</span></h2>
+                    <p>Scott J Frank creates stories that spark imagination and wonder. "Kael and the Whale" is his
+                        latest adventure, inviting readers into a magical underwater world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="author-photo">
+                    <img src="assets/images/author-photo.jpg" alt="Scott J Frank - Author">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Readers Are Saying</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <img src="assets/images/testimonial-1.png" alt="Happy Parent" class="testimonial-avatar">
+                    <div class="stars">★★★★★</div>
+                    <p>"It is one of those rare children's books that adults enjoy reading just as much as the kids."
+                    </p>
+                    <span class="reviewer">- Happy Parent</span>
+                </div>
+                <!--  <div class="review-card">
+                    <img src="assets/images/testimonial-2.png" alt="Amazon Reviewer" class="testimonial-avatar">
+                    <div class="stars">★★★★★</div>
+                    <p>"The illustrations are beautiful and full of little details that keep little Theo asking
+                        questions."</p>
+                    <span class="reviewer">- Amazon Reviewer</span>
+                </div> -->
+
+                <div class="review-card video-card">
+                    <video controls class="testimonial-video">
+                        <!-- <source src="assets/video/Vid.mp4" type="video/quicktime"> -->
+                        <source src="assets/video/Vid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="review-card video-card">
+                    <video controls class="testimonial-video">
+                        <source src="assets/video/Video Review.mov" type="video/quicktime">
+                        <source src="assets/video/Video Review.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events">
+        <div class="container">
+            <h2>Meet Scott at Upcoming Book Signings</h2>
+            <div class="event-list">
+                <div class="event-item">
+                    <span class="date">Coming Soon</span>
+                    <span class="location">Check back for updates!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/images/logo-white.png" alt="Scott Frank Logo" class="footer-logo">
+                    <p class="footer-tagline">Creating magical stories that inspire young minds and hearts.</p>
+                    <div class="social-links footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Amazon"><i class="fab fa-amazon"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About the Book</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#author">About the Author</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <form class="contact-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="contact-info">Stay updated on new releases and events!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Scott J Frank. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="https://www.amazon.com/dp/B0CKK2L6K5" target="_blank">Buy on Amazon</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
